@@ -1,6 +1,6 @@
-lengh = 10
+length = 10
 width = 5
 
-area = lengh * width
+area = length * width
 
 print("the area of a rectangle is",area)
