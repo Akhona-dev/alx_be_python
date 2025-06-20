@@ -24,13 +24,13 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(0, 100), 0)
         self.assertEqual(self.calc.multiply(-3, -3), 9)
 
-    def test_divide(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
         self.assertEqual(self.calc.divide(5, 2), 2.5)
         self.assertEqual(self.calc.divide(-9, 3), -3)
-        self.assertIsNone(self.calc.divide(10, 0))  # Division by zero
-        self.assertIsNone(self.calc.divide(0, 0))   # Still invalid
         self.assertEqual(self.calc.divide(0, 5), 0)
+        self.assertIsNone(self.calc.divide(10, 0))  
+        self.assertIsNone(self.calc.divide(0, 0))
 
 if __name__ == '__main__':
     unittest.main()
